@@ -1,0 +1,16 @@
+<h1>New link</h1>
+
+<%= form_with model: @link do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+    
+
+    <%= form.label :link %>
+    <%= form.text_field :link %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
