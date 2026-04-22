@@ -1,9 +1,9 @@
-<h1>Links</h1>
+<h1 class="title center">Simple link shortener</h1>
 
 <div id="links">
     <% @links.each do |link| %>
-    <div>
-      <%= link.name %>
-    </div>
+    <a href="/<%= link.id %>">
+      <%= link.name %>:
+    </a><br>
   <% end %>
 </div>
