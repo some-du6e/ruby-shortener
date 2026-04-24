@@ -1,9 +1,13 @@
 <h1 class="title center">Simple link shortener</h1>
 
-<div id="links">
-    <% @links.each do |link| %>
-    <a href="/<%= link.id %>">
-      <%= link.name %>:
+
+<div id="links" class="card">
+  <h1 class="text"><a href="/new">Create new link</a></h1>
+  <h2 class="subtitle text">Latest links submitted</h2>
+    <% @links.reverse.first(5).each do |link| %>
+    <a href="/<%= link.id %>" class="">
+      
+      <div class="text"><%= link.name %> -></div> <div class="code"><%= link.link %></div>
     </a><br>
   <% end %>
 </div>
