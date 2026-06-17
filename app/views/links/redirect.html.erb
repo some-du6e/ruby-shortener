@@ -1,5 +1,5 @@
-<h1>Redirecting... </h1>
-<p>Redirecting you to <a href="<%= @destination.link %>"><%= @destination.link %></a> in 2 seconds... bye</p>
+<h1 class="title center">Redirecting... </h1>
+<h2 class="text">Redirecting you to <a href="<%= @destination.link %>"><%= @destination.link %></a> in 2 seconds... bye</h2>
 <script>
     setTimeout(function() {
         window.location.href = "<%= @destination.link %>";
