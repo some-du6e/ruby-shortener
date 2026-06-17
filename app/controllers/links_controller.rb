@@ -3,7 +3,7 @@ class LinksController < ApplicationController
     @links = Link.all
   end
   def redirect
-    @destination = Link.find(params[:id])
+    @destination = Link.find_by!(name: params[:name])
   end
 
   def new

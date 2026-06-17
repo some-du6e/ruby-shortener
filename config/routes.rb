@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get "/links", to: "links#index"
   post "/links", to: "links#create"
   get "/new", to: "links#new"
-  get "/:id", to: "links#redirect"
+  get "/:name", to: "links#redirect"
 
   # Render dynamic PWA files from app/views/pwa/* (remember to link manifest in application.html.erb)
   # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
