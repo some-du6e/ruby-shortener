@@ -3,7 +3,8 @@ class LinksController < ApplicationController
     @links = Link.all
   end
   def redirect
-    @destination = Link.find_by!(name: params[:name])
+    @destination = Link.find_by(name: params[:name])
+    render file: Rails.public_path.join("404.html"), status: :not_found, layout: false unless @destination
   end
 
   def new
