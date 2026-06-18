@@ -1,24 +1,14 @@
-# README
+# Ruby shortener
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Just learning ruby by making a link shortener
 
-Things you may want to cover:
 
-* Ruby version
+## Usage
+1. Click on **create a new link**
+0. Fill out the `name` and link you want to shorten
+0. You shall see it now in the home page or you may access it by appending your link name to the the link shortener is being hosted on
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Selfhosting
+- Im using 3.4.9 but im sure you can use others
+- I think you just run it using `bin/ruby server`, im pretty new to this so idk
